@@ -1,5 +1,5 @@
 {
-  "name": "palindrome",
+  "name": "alice-palindrome",
   "version": "1.0.0",
   "description": "Palindrome detector",
   "main": "index.js",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/AI-Wonderland/palindrome/issues"
   },
-  "homepage": "https://github.com/AI-Wonderland/palindrome#readme"
+  "homepage": "https://github.com/AI-Wonderland/palindrome#readme",
+  "directories": {
+    "test": "test"
+  }
 }

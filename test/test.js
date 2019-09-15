@@ -23,6 +23,11 @@ describe("Phrase", function() {
         let mixedCase = new Phrase("RaceCar");
         assert(mixedCase.palindrome());
       });
+
+      it("should return false for an empty string", function() {
+        let emptyPhrase = new Phrase("");
+        assert(!emptyPhrase.palindrome());
+      });
     });
 
      describe("#letters", function() {
@@ -31,7 +36,7 @@ describe("Phrase", function() {
         assert.strictEqual(punctuatedPalindrome.letters(), "MadamImAdam");
       });
 
-      it("should return empty string", function() {
+      it("should return empty string for Numbers", function() {
         let numberPalindrome = new Phrase("1, 2, 3, 4");
         assert.strictEqual(numberPalindrome.letters(), '');
       });
